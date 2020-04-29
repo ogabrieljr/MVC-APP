@@ -34,6 +34,9 @@ namespace MVC_APP.Controllers
             return Content(string.Format("pageIndex={0}&sortBy={1}", pageIndex, sortBy));
         }
 
+
+        
+        [Route("movies/released/{year}/{month}")]
         public ActionResult DateReleased(int year, int month)
         {
             return Content(year + "/" + month);
